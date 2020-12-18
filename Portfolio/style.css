@@ -856,23 +856,123 @@ header {
 
 /*Services*/
 .service {
+	background: #f5f5f5;
+	overflow: hidden;
+}
+.serviceSlot {
+	margin: 100px auto;
 	display: flex;
-	height: 540px;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
-	background: #f5f5f5;
 }
-.serviceSlot {
+.serviceItem {
 	width: 213px;
-	margin-right: 90px;
+	margin: 50px 90px 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.serviceItem p {
+	text-align: center;
+	line-height: 2;
+}
+
+/*Testimonials*/
+.testimonials {
+	background-color: #10c9c3;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
-.serviceSlot p {
+.testimonials p {
 	text-align: center;
-	line-height: 2;
+}
+.quote {
+	margin-top: 170px;
+}
+.author {
+	margin-top: 35px;
+	margin-bottom: 105px;
+}
+.click {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+}
+.bigCircle {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 0 9px;
+}
+.smallCircle {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #b0e8e6;
+}
+
+/*Client*/
+.client {
+	margin: 60px 0 70px 0;
+}
+.clientItem {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.clientItem a {
+	margin-right: 150px;
+}
+.clientItem:first-child {
+	margin-left: 135px;
+}
+
+/*Request*/
+.projectRequest {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #f5f5f5;
+}
+.projectRequest h2,.projectRequest p {
+	text-align: center;
+}
+.projectRequest p {
+	margin: 40px 410px 35px 410px;
+}
+
+
+
+
+
+
+/*Footer*/
+footer {
+	background-color: #000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.copy {
+	margin: 100px 220px 100px 100px;
+}
+.content,.connect, .news, .social {
+	margin-top: 100px;
+}
+.connect {
+	margin-right: 145px;
+}
+.content {
+	margin-right: 50px;
+}
+.news {
+	margin-right: 130px;
+}
+.social {
+	margin-right: 130px;
 }
