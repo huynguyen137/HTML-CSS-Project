@@ -945,10 +945,42 @@ header {
 .projectRequest p {
 	margin: 40px 410px 35px 410px;
 }
-
-
-
-
+.requestTitle {
+	margin-top: 100px;
+}
+.form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 350px;
+}
+.yourName,.yourMail {
+	width: 318px;
+	height: 48px;
+	border: none;
+}
+.yourName {
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+.yourTitle {
+	width: 670px;
+	height: 48px;
+	border: none;
+	margin-bottom: 30px;
+}
+.yourComment {
+	width: 670px;
+	height: 170px;
+	border: none;
+}
+.sendMessage {
+	display: block;
+	padding: 22px 35px;
+	background-color: #10c9c3;
+	border: none;
+	margin: 30px auto 100px;
+}
 
 
 /*Footer*/
