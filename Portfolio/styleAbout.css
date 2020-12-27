@@ -684,7 +684,7 @@
 
 /*Header*/
 header {
-	background-color: #e9e9e9;
+	background-color: #fff;
 }
 .topHeader {
 	display: flex;
@@ -694,7 +694,7 @@ header {
 	width: 1366px;
 }
 .logo {
-	margin: 38px 0 0 98px;
+	margin: 38px 0 40px 98px;
 }
 .navBar {
 	overflow: hidden;
@@ -720,79 +720,51 @@ header {
 
 /*Banner*/
 .banner {
-	background-color: #e9e9e9;
+	background-color: #3e3e3e;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .description {
-	padding: 172px 0 294px 764px;
+	padding: 115px 0 120px;
 }
 .description h2 {
 	margin-bottom: 32px;
+	text-align: center;
 }
 .description p {
-	margin-left: 5px;
-}
-.contactLink {
-	background-color: #10c9c3;
-	padding: 23px 46px;
-	margin: 38px 0 0 5px;
-	text-decoration: none;
-	display: block;
-	float: left;
+	text-align: center;
+	padding: 0 420px;
 }
 
 /*About Us*/
-.aboutUs {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 100px 342px;
-}
-.aboutUs h2, .aboutUs p {
-	text-align: center;
-}
-.aboutUs img {
-	max-width: 223px;
-}
-
-/*Skills*/
-.skills {
+.overall {
 	display: flex;
 	flex-direction: row;
 }
-.level {
-	width: 50%;
-	background: #f8f9f9;
-}
-.thumb {
-	background: #e9e9e9;
-	width: 50%;
-}
-.levelBar {
-	height: 3px;
-	background: #d8d8d8;
+.selfImage {
 	width: 100%;
+	max-width: 100%;
+	background-color: #e1e1e1;
 }
-.p75 {
-	height: 3px;
-	width: 75%;
-	background: #10c9c3;
+.aboutUs {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 135px;
 }
-.p90 {
-	height: 3px;
-	width: 90%;
-	background: #10c9c3;
+.aboutUs h2, .aboutUs p {
+	margin-left: 80px;
 }
-.p65 {
-	height: 3px;
-	width: 65%;
-	background: #10c9c3;
+.aboutUs h2 {
+	margin-bottom: 30px;
+	font-weight: bolder;
 }
-.levelContainer {
-	padding: 165px 85px 165px 100px;
+.aboutUs img {
+	max-width: 223px;
+	margin: 30px 0 140px 80px;
 }
-.skillLevel p {
-	margin: 40px 0 20px 0;
-}
+
 
 /*Numbers*/
 .numbers {
@@ -838,100 +810,6 @@ header {
 	margin: 45px 0;
 }
 
-/*Progress*/
-.progress {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 100px;
-}
-.progress p,.progress h2 {
-	text-align: center;
-}
-.progress p {
-	margin: 40px 430px 60px 430px;
-}
-.progress h2 {
-	margin-top: 100px;
-}
-
-/*Services*/
-.service {
-	background: #f5f5f5;
-	overflow: hidden;
-}
-.serviceSlot {
-	margin: 100px auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.serviceItem {
-	width: 213px;
-	margin: 50px 90px 0 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.serviceItem p {
-	text-align: center;
-	line-height: 2;
-}
-
-/*Testimonials*/
-.testimonials {
-	background-color: #10c9c3;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.testimonials p {
-	text-align: center;
-}
-.quote {
-	margin-top: 170px;
-}
-.author {
-	margin-top: 35px;
-	margin-bottom: 105px;
-}
-.click {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 60px;
-}
-.bigCircle {
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: #fff;
-	margin: 0 9px;
-}
-.smallCircle {
-	width: 6px;
-	height: 6px;
-	border-radius: 50%;
-	background-color: #b0e8e6;
-}
-
-/*Client*/
-.client {
-	margin: 60px 0 70px 0;
-}
-.clientItem {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.clientItem a {
-	margin-right: 150px;
-}
-.clientItem:first-child {
-	margin-left: 135px;
-}
 
 /*Request*/
 .projectRequest {
@@ -949,11 +827,19 @@ header {
 .requestTitle {
 	margin-top: 100px;
 }
+.contactLink {
+	background-color: #10c9c3;
+	padding: 23px 46px;
+	margin: 0 auto 100px;
+	text-decoration: none;
+	display: block;
+	float: left;
+}
 .form {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 0 350px;
+	margin: 100px 0 0;
 }
 .yourName,.yourMail {
 	width: 318px;
@@ -980,7 +866,7 @@ header {
 	padding: 22px 35px;
 	background-color: #10c9c3;
 	border: none;
-	margin: 30px auto 100px;
+	margin: 30px 0 100px;
 }
 
 
@@ -1011,6 +897,25 @@ footer {
 }
 
 
+/*Contact*/
+.info {
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.detail {
+	margin: 100px 90px 0 55px;
+}
+.detail p {
+	width: 365px;
+	margin-bottom: 40px;
+}
+.map {
+	margin-left: 100px;
+	margin-bottom: 100px;
+}
+
 /*Responsive*/
 @media screen and (max-width: 600px) {
 	.topHeader {
@@ -1021,12 +926,13 @@ footer {
 	}
 	.logo {
 		float: none;
-		margin: 50px 0;
+		margin: 30px 0;
 	}
 	.navBar {
 		display: flex;
 		flex-direction: row;
 		margin-top: 0;
+		margin-bottom: 20px;
 	}
 	.navBar li {
 		margin-right: 10px;
@@ -1043,18 +949,18 @@ footer {
 		justify-content: center;
 	}
 	.description {
-		padding: 50px 0 80px 0;
+		padding: 30px 0 40px 0;
 	}
 	.description h2 {
-		margin-bottom: 32px;
+		margin-bottom: 0;
 		font-size: 19px;
 		text-align: center;
 	}
 	.description p {
 		margin-left: 5px;
-		font-size: 20px;
+		font-size: 16px;
 		text-align: center;
-		padding: 5px;
+		padding: 16px;
 	}
 	.contactLink {
 		float: none;
@@ -1064,38 +970,23 @@ footer {
 		max-width: fit-content;
 	}
 
-
+	.overall {
+		flex-direction: column;
+	}
 	.aboutUs {
 		margin: 30px 0;
+	}
+	.aboutUs h2, .aboutUs p {
+		margin-left: 20px;
 	}
 	.aboutUs h2 {
 		font-size: 20px;
 	}
 	.aboutUs p {
 		font-size: 20px;
-		padding: 5px;
 	}
-
-
-	.skills {
-		display: flex;
-		flex-direction: column;
-	}
-	.level {
-		width: 100%;
-	}
-	.thumb {
-		width: 100%;
-	}
-	.levelContainer {
-		padding: 20px;
-	}
-	.levelContainer h2 {
-		font-size: 16px;
-	}
-	.skillLevel p {
-		margin: 10px 0 10px 0;
-		font-size: 10px;
+	.aboutUs img {
+		margin-bottom: 30px;
 	}
 
 
@@ -1109,74 +1000,6 @@ footer {
 	}
 	.work {
 		flex-direction: column;
-	}
-	.sq341x300 {
-		width: 100%;
-		height: 300px;
-	}
-	.overload {
-		display: none;
-	}
-
-
-	.progress {
-		margin-bottom: 0;
-	}
-	.progress p {
-		margin: 40px 0;
-	}
-	.progress h2 {
-		margin-top: 50px;
-	}
-	video {
-		width: 100%;
-		height: auto;
-	}
-
-
-	.serviceSlot {
-		margin: 20px auto;
-	}
-	.serviceItem {
-		width: 185px;
-		margin: 50px 0 0 0;
-	}
-	.serviceItem p {
-		line-height: 1.5;
-		font-size: 15px;
-		padding: 5px;
-	}
-
-
-	.quote {
-		margin-top: 30px;
-	}
-	.author {
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-	.click {
-		margin-bottom: 30px;
-	}
-
-
-	.client {
-		margin: 30px 0 40px 0;
-	}
-	.clientItem {
-		display: flex;
-		flex-direction: row;
-		justify-content: flex-start;
-	}
-	.clientItem a {
-		margin-right: 20px;
-	}
-	.clientItem img {
-		max-width: 75%;
-
-	}
-	.clientItem:first-child {
-		margin-left: 20px;
 	}
 
 
@@ -1195,32 +1018,8 @@ footer {
 	.requestTitle {
 		margin-top: 30px;
 	}
-	.form {
-		flex-direction: column;
-		flex-wrap: nowrap;
-		margin: 0 30px;
-	}
-	.yourName,.yourMail {
-		width: 100%;
-		height: 48px;
-		margin-bottom: 15px;
-	}
-	.yourName {
-		margin-right: 0;
-	}
-	.yourTitle {
-		width: 100%;
-		height: 48px;
-		margin-bottom: 15px;
-	}
-	.yourComment {
-		width: 100%;
-		height: 150px;
-	}
-	.sendMessage {
-		font-size: 14px;
-		padding: 15px 20px;
-		margin: 20px auto 50px;
+	.contactLink {
+		margin-bottom: 30px;
 	}
 
 
@@ -1253,5 +1052,7 @@ footer {
 	.content ul li, .news ul li, .social ul li {
 		margin-right: 30px;
 	}
-
+	footer p, footer a {
+		padding-left: 10px;
+	}
 }
