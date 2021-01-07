@@ -681,17 +681,21 @@
 .decor-none {
 	text-decoration: none;
 }
+.wrapper {
+
+}
 
 /*Header*/
 header {
-	background-color: #e9e9e9;
+	background: url('jess-bailey-ZY2GNpgiWyU-unsplash.jpg');
+	background-size: cover;
 }
 .topHeader {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	margin: 0 auto;
-	width: 1366px;
+	width: 100%;
 }
 .logo {
 	margin: 38px 0 0 98px;
@@ -719,9 +723,6 @@ header {
 }
 
 /*Banner*/
-.banner {
-	background-color: #e9e9e9;
-}
 .description {
 	padding: 172px 0 294px 764px;
 }
@@ -764,8 +765,9 @@ header {
 	background: #f8f9f9;
 }
 .thumb {
-	background: #e9e9e9;
+	background: url(neonbrand-3GZNPBLImWc-unsplash.jpg);
 	width: 50%;
+	background-size: cover;
 }
 .levelBar {
 	height: 3px;
@@ -817,7 +819,41 @@ header {
 }
 .sq341x300 {
 	width: 25%;
-	height: 300px;
+	position: relative;
+	padding-bottom: 20%;
+}
+.sq341x300 img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.slide {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #10c9c3;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+.sq341x300:hover .slide {
+	bottom: 0;
+	height: 100%;
+	opacity: 0.5;
+}
+.slideContent {
+  white-space: nowrap; 
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .darkGrey {
 	background: #838383;
@@ -956,7 +992,7 @@ header {
 	margin: 0 350px;
 }
 .yourName,.yourMail {
-	width: 318px;
+	width: 47.3%;
 	height: 48px;
 	border: none;
 }
@@ -965,13 +1001,13 @@ header {
 	margin-bottom: 30px;
 }
 .yourTitle {
-	width: 670px;
+	width: 100%;
 	height: 48px;
 	border: none;
 	margin-bottom: 30px;
 }
 .yourComment {
-	width: 670px;
+	width: 100%;
 	height: 170px;
 	border: none;
 }
